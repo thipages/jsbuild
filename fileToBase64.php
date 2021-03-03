@@ -1,6 +1,6 @@
 <?php
 $target='./src/thipages/jsbuild/Base64Config.php';
-$rollup='./rollup';
+$rollup='./config/rollup';
 $template=<<<Template
 <?php
 namespace thipages\jsbuild;
@@ -16,7 +16,7 @@ Template;
 
 $data=[];
 foreach (array_diff(scandir($rollup), [".", ".."]) as $name)  $data[]=[$rollup,$name];
-$data[]=['.','package.json'];
+$data[]=['./config/','package.json'];
 //
 $list=[];
 foreach ($data as $item) {
