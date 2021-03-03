@@ -29,7 +29,9 @@ $builder->writeBuild();
 
 4. Create library entry point as _./esm/index.js_
    
-5. run _npm install_
+5. execute _npm install_
+
+6. execute _npm run build_
    
 This will create three root files
 - index.js (esm)
