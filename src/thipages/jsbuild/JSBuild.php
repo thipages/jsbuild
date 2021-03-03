@@ -63,18 +63,6 @@ class JSBuild {
                     base64_decode($item[2])
                 );
             }
-            /*$files=scandir($sourceRollupDir);
-            foreach ($files as $file) {
-                if ($file==='.' || $file ==='..') continue;
-                $this->replaceGenerics(
-                    $targetRollupDir.$file,
-                    file_get_contents($sourceRollupDir.$file)
-                );
-            }
-            $this->replaceGenerics(
-                $thisDir."/package.json",
-                file_get_contents(dirname(__FILE__)."/package.json")
-            );*/
         }
         if ($echoing) echo(
             $valid  ? "Creation succeed"
