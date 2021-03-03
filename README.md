@@ -36,6 +36,6 @@ This will create three root files
 - index.min.js (esm minified)
 - min.js (iife minified)
 
-Note : php script (point 1 and 2) can not be reused (no update process yet)
+Note : php script (point 2) can not be reused (no update process yet)
 
 
