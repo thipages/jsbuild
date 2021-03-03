@@ -1,0 +1,20 @@
+{
+  "name": "thipages/jsbuild",
+  "version": "v0.0.1",
+  "description": "Automate js build",
+  "type": "library",
+  "keywords" : ["automation","javascript", "build", "rollup", "terser", "babel"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thierry PAGES",
+      "email": "thipages@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-0": {"thipages\\quick\\": "src/"}
+  },
+  "require": {},
+  "require-dev": {}
+}
