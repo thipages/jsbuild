@@ -2,11 +2,12 @@
 Automate js build
 
 ## installation
-composer require thipages/jsbuild
+_composer require thipages/jsbuild_
+
 
 ## Usage
 
-Create a _jsbuild.json_ file model to fill in
+1. Create a _jsbuild.json_ file by hand or with this helper
 
 ```php
 use thipages\jsbuild\JSBuild;
@@ -15,13 +16,26 @@ $builder=new JSBuild();
 $builder->writeBuildModel();
 ```
 
-Create rollup config files folder and _package.json_ from a _jsbuild.json_ file 
+2. Create rollup config files folder and _package.json_ from a _jsbuild.json_ file 
 
 ```php
 use thipages\jsbuild\JSBuild;
 require('./vendor/auotload.php');
 $builder=new JSBuild();
 $builder->writeBuild();
-// then update package.json dependencies
-// and finally run npm install
 ```
+
+3. update _package.json_ dependencies if any
+
+4. Create library entry point as _./esm/index.js_
+   
+5. run _npm install_
+   
+This will create three root files
+- index.js (esm)
+- index.min.js (esm minified)
+- min.js (iife minified)
+
+Note : php script (point 1 and 2) can not be reused (no update process yet)
+
+
