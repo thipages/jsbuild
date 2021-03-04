@@ -11,7 +11,7 @@ _composer require thipages/jsbuild_
 
 ```php
 use thipages\jsbuild\JSBuild;
-require('./vendor/auotload.php');
+require('./vendor/autotload.php');
 $builder=new JSBuild();
 $builder->writeBuildModel();
 ```
@@ -20,7 +20,7 @@ $builder->writeBuildModel();
 
 ```php
 use thipages\jsbuild\JSBuild;
-require('./vendor/auotload.php');
+require('./vendor/autotload.php');
 $builder=new JSBuild();
 $builder->writeBuild();
 ```
