@@ -1,6 +1,6 @@
 {
   "name": "thipages/jsbuild",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "description": "Automate js build",
   "type": "library",
   "keywords" : ["automation","javascript", "build", "rollup", "terser", "babel"],
@@ -15,6 +15,8 @@
   "autoload": {
     "psr-0": {"thipages\\jsbuild\\": "src/"}
   },
-  "require": {},
+  "require": {
+    "ext-json": "*"
+  },
   "require-dev": {}
 }
