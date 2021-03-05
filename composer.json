@@ -13,7 +13,7 @@
   ],
   "minimum-stability": "stable",
   "autoload": {
-    "psr-0": {"thipages\\quick\\": "src/"}
+    "psr-0": {"thipages\\jsbuild\\": "src/"}
   },
   "require": {},
   "require-dev": {}
