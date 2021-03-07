@@ -12,8 +12,7 @@ _composer require thipages/jsbuild_
 ```php
 use thipages\jsbuild\JSBuild;
 require('./vendor/autotload.php');
-$builder=new JSBuild();
-$builder->writeBuildModel();
+JSBuild::writeBuildModel();
 ```
 
 2. Create rollup config files folder and _package.json_ from a _jsbuild.json_ file 
