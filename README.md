@@ -14,6 +14,7 @@ use thipages\jsbuild\JSBuild;
 require('./vendor/autotload.php');
 JSBuild::writeBuildModel();
 ```
+or execute _php -r "require './vendor/autoload.php';thipages\jsbuild\JSBuild::writeBuildModel();"_
 
 2. Create rollup config files folder and _package.json_ from a _jsbuild.json_ file 
 
